@@ -8,17 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		C91108CD2892698E0087FB49 /* HospitalNearUsersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91108CC2892698E0087FB49 /* HospitalNearUsersApp.swift */; };
-		C91108CF2892698E0087FB49 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91108CE2892698E0087FB49 /* ContentView.swift */; };
+		C91108CF2892698E0087FB49 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91108CE2892698E0087FB49 /* MainView.swift */; };
 		C91108D12892698F0087FB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91108D02892698F0087FB49 /* Assets.xcassets */; };
 		C91108D42892698F0087FB49 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C91108D32892698F0087FB49 /* Preview Assets.xcassets */; };
+		C91108DB28926A450087FB49 /* MapViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C91108DA28926A450087FB49 /* MapViewManager.swift */; };
+		C9651F402892794800474677 /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9651F3F2892794800474677 /* Hospital.swift */; };
+		C9651F4228927A3800474677 /* HospitalAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9651F4128927A3800474677 /* HospitalAnnotation.swift */; };
+		C9651F4528927AB600474677 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9651F4428927AB600474677 /* LocationManager.swift */; };
+		C9651F4728927B6F00474677 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9651F4628927B6F00474677 /* Coordinator.swift */; };
+		C9651F4928927C6D00474677 /* HospitalsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9651F4828927C6D00474677 /* HospitalsListView.swift */; };
+		C9651F4B28927D9900474677 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9651F4A28927D9900474677 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C91108C92892698E0087FB49 /* HospitalNearUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HospitalNearUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C91108CC2892698E0087FB49 /* HospitalNearUsersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalNearUsersApp.swift; sourceTree = "<group>"; };
-		C91108CE2892698E0087FB49 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C91108CE2892698E0087FB49 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C91108D02892698F0087FB49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C91108D32892698F0087FB49 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C91108DA28926A450087FB49 /* MapViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewManager.swift; sourceTree = "<group>"; };
+		C9651F3F2892794800474677 /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
+		C9651F4128927A3800474677 /* HospitalAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalAnnotation.swift; sourceTree = "<group>"; };
+		C9651F4428927AB600474677 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C9651F4628927B6F00474677 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C9651F4828927C6D00474677 /* HospitalsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsListView.swift; sourceTree = "<group>"; };
+		C9651F4A28927D9900474677 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +65,10 @@
 		C91108CB2892698E0087FB49 /* HospitalNearUsers */ = {
 			isa = PBXGroup;
 			children = (
-				C91108CC2892698E0087FB49 /* HospitalNearUsersApp.swift */,
-				C91108CE2892698E0087FB49 /* ContentView.swift */,
-				C91108D02892698F0087FB49 /* Assets.xcassets */,
+				C9651F4328927A9C00474677 /* Managers */,
+				C9651F3E2892792C00474677 /* Models */,
+				C91108DC28926A4E0087FB49 /* Views */,
+				C91108DD289271660087FB49 /* Resources */,
 				C91108D22892698F0087FB49 /* Preview Content */,
 			);
 			path = HospitalNearUsers;
@@ -65,6 +80,44 @@
 				C91108D32892698F0087FB49 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C91108DC28926A4E0087FB49 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C91108CE2892698E0087FB49 /* MainView.swift */,
+				C9651F4A28927D9900474677 /* MapView.swift */,
+				C9651F4828927C6D00474677 /* HospitalsListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C91108DD289271660087FB49 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C91108CC2892698E0087FB49 /* HospitalNearUsersApp.swift */,
+				C91108D02892698F0087FB49 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C9651F3E2892792C00474677 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C9651F3F2892794800474677 /* Hospital.swift */,
+				C9651F4128927A3800474677 /* HospitalAnnotation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C9651F4328927A9C00474677 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C9651F4428927AB600474677 /* LocationManager.swift */,
+				C91108DA28926A450087FB49 /* MapViewManager.swift */,
+				C9651F4628927B6F00474677 /* Coordinator.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +190,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C91108CF2892698E0087FB49 /* ContentView.swift in Sources */,
+				C9651F4928927C6D00474677 /* HospitalsListView.swift in Sources */,
+				C9651F4228927A3800474677 /* HospitalAnnotation.swift in Sources */,
+				C91108CF2892698E0087FB49 /* MainView.swift in Sources */,
+				C9651F4528927AB600474677 /* LocationManager.swift in Sources */,
+				C9651F402892794800474677 /* Hospital.swift in Sources */,
+				C91108DB28926A450087FB49 /* MapViewManager.swift in Sources */,
 				C91108CD2892698E0087FB49 /* HospitalNearUsersApp.swift in Sources */,
+				C9651F4B28927D9900474677 /* MapView.swift in Sources */,
+				C9651F4728927B6F00474677 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +330,7 @@
 				DEVELOPMENT_TEAM = ALTGSDSZNG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "HospitalNearUsers app requires access to your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +360,7 @@
 				DEVELOPMENT_TEAM = ALTGSDSZNG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "HospitalNearUsers app requires access to your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
